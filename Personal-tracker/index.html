@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Finance Tracker</h1>
+
+    <form id="transaction-form">
+      <select id="type">
+        <option value="Income">Income</option>
+        <option value="Expense">Expense</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <input type="text" id="category" placeholder="Category" required>
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+      <button onclick="setFilter('All')">All</button>
+      <button onclick="setFilter('Income')">Income</button>
+      <button onclick="setFilter('Expense')">Expense</button>
+    </div>
+
+    <ul id="transaction-list"></ul>
+
+    <div class="analytics">
+      <p>Total Income: ₹<span id="total-income">0</span></p>
+      <p>Total Expense: ₹<span id="total-expense">0</span></p>
+      <p>Balance: ₹<span id="balance">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
