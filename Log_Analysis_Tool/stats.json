@@ -1,0 +1,19 @@
+{
+  "totalRequests": 9,
+  "error4xx": 2,
+  "error5xx": 2,
+  "top3Urls": [
+    {
+      "url": "/home",
+      "count": 3
+    },
+    {
+      "url": "/login",
+      "count": 2
+    },
+    {
+      "url": "/about",
+      "count": 2
+    }
+  ]
+}
