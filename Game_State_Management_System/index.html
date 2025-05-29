@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turn-Based Strategy Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Turn-Based Strategy Game</h1>
+
+  <div id="game-info">
+    <p id="turn-info">Current Turn: Player 1</p>
+    <p id="phase-info">Phase: Move</p>
+  </div>
+
+  <div id="game-board"></div>
+
+  <div id="actions">
+    <button id="move-btn">Move</button>
+    <button id="attack-btn" disabled>Attack (Coming Soon)</button>
+    <button id="end-turn-btn">End Turn</button>
+  </div>
+
+  <div id="stats">
+    <h2>Game Stats</h2>
+    <p>Turns Taken: <span id="turns-taken">0</span></p>
+    <p>Damage Dealt: <span id="damage-dealt">0</span></p>
+    <p>Items Collected: <span id="items-collected">0</span></p>
+  </div>
+
+  <div id="save-load">
+    <button id="save-game-btn">Save Game</button>
+    <button id="load-game-btn">Load Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
