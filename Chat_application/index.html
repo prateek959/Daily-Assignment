@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="sidebar">
+      <h2>Rooms</h2>
+      <button onclick="switchRoom('general')" id="generalBtn">#general</button>
+      <button onclick="switchRoom('random')" id="randomBtn">#random</button>
+    </div>
+    
+    <div class="chat-box">
+      <h2 id="room-title">#general</h2>
+      <div id="messages" class="messages"></div>
+      <div id="typing" class="typing">Someone is typing...</div>
+      <div class="input-area">
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
