@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "name": "Laptop",
+            "description": "15-inch display, 16GB RAM",
+            "quantity": 8,
+            "price": 1300.99
+        }
+    ]
+}
