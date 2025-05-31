@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Language Learning Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 data-key="app_title">Language Learning Platform</h1>
+    <div class="settings">
+      <label for="language-select" data-key="select_language">Select Language:</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+      </select>
+
+      <label for="theme-toggle" data-key="dark_theme">Dark Theme:</label>
+      <input type="checkbox" id="theme-toggle" />
+
+      <label for="font-size" data-key="font_size">Font Size:</label>
+      <select id="font-size">
+        <option value="small" data-key="small">Small</option>
+        <option value="medium" selected data-key="medium">Medium</option>
+        <option value="large" data-key="large">Large</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="lessons-section">
+      <h2 data-key="lessons">Lessons</h2>
+      <ul id="lessons-list"></ul>
+    </section>
+
+    <section id="progress-section">
+      <h2 data-key="progress">Progress</h2>
+      <p id="progress-text"></p>
+    </section>
+
+    <section id="achievements-section">
+      <h2 data-key="achievements">Achievements</h2>
+      <ul id="achievements-list"></ul>
+    </section>
+
+    <section id="certificate-section" style="display:none;">
+      <h2 data-key="certificate">Certificate</h2>
+      <p id="certificate-text"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

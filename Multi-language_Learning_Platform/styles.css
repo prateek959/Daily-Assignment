@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+select, input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  margin: 0 0 10px 0;
+}
+
+#lessons-list, #achievements-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lesson-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lesson-item.completed {
+  background-color: #c8e6c9;
+  text-decoration: line-through;
+}
+
+#certificate-section {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  background-color: #e8f5e9;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-medium {
+  font-size: 16px;
+}
+
+.font-large {
+  font-size: 20px;
+}
