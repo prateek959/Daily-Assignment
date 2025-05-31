@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Event Manager</h1>
+
+    <section>
+      <h2>Create Event</h2>
+      <form id="eventForm">
+        <input type="text" id="eventName" placeholder="Event Name" required />
+        <input type="text" id="eventType" placeholder="Event Type" required />
+        <input type="datetime-local" id="eventDate" required />
+        <input type="text" id="venue" placeholder="Venue" required />
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul id="eventList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
